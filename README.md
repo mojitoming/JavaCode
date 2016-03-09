@@ -1,0 +1,2 @@
+# JavaCode
+some java practise
