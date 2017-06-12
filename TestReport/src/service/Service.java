@@ -29,7 +29,7 @@ public class Service {
                     "        g.COST_PRICE cost, g.SELLING_PRICE selling " +
                     "   from   goodsinfo g,   tradinginfo t " +
                     "  where g.goods_id = t.trading_goods_id " +
-                    "  group by g.goods_name " +
+                    "  group by g.goods_id, g.goods_name " +
                     "  order by g.goods_id ";
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
